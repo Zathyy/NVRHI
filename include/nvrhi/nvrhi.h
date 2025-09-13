@@ -1950,9 +1950,9 @@ namespace nvrhi
     struct VulkanBindingOffsets
     {
         uint32_t shaderResource = 0;
-        uint32_t sampler = 128;
-        uint32_t constantBuffer = 256;
-        uint32_t unorderedAccess = 384;
+        uint32_t sampler = 0;
+        uint32_t constantBuffer = 0;
+        uint32_t unorderedAccess = 0;
 
         constexpr VulkanBindingOffsets& setShaderResourceOffset(uint32_t value) { shaderResource = value; return *this; }
         constexpr VulkanBindingOffsets& setSamplerOffset(uint32_t value) { sampler = value; return *this; }
